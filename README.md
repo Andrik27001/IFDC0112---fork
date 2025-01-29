@@ -38,6 +38,7 @@ Ahora voy a hacer unas pruebas de __negrita__, _subrayado_
 + awk -F';' '{print $3} ' amd_commas.csv  extrae la tercera columna de un archivo
 + $ awk -F';' '{print $3}' tirame_escritura.csv | sort | uniq muestras las configuracione únicas del numero de nucleos que tiene
 + basic calculator  (obase=2 para pasar de decimal a binario) (ibase=2 para pasar de binario a decimal)
++ contar lineas de un archivo  wc -l
 
 # Comandos vim
 
