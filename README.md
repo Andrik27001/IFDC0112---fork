@@ -30,10 +30,14 @@ Ahora voy a hacer unas pruebas de __negrita__, _subrayado_
 + make directory (mkdir <dir>)
 + change ownership (chown <owner>:<group> <file>)
 + change permissions (chmod <num> <file>)  El numero de tres cifras otorga los permisos al owner, al grupo y a otros
++ copia archivos  cp <origen> <destino>
++ cambia el nombre a un archivo o directorio mv <inicial> <final>
 + list directous (ls <directory>  flsgs: -l long format.  -a all files.))
-+ grep <patron> <archivo<>
++ grep <patron> <archivo>
 + cat amd.csv | awk -F';' '$3==8' filtra los registros que tiene un 8 en la tercera columna
 + awk -F';' '{print $3} ' amd_commas.csv  extrae la tercera columna de un archivo
++ $ awk -F';' '{print $3}' tirame_escritura.csv | sort | uniq muestras las configuracione únicas del numero de nucleos que tiene
++ basic calculator  (obase=2 para pasar de decimal a binario) (ibase=2 para pasar de binario a decimal)
 
 # Comandos vim
 
