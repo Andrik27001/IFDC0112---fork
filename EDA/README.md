@@ -60,8 +60,40 @@
     cut -d: -f17 flags.csv | sort | grep -v Text | grep '^$'| wc -l
     ```    
 
-    + Para saber cuantos registros tengo para cada uno de los diferentes valores que hay en la columan 7
+     
+
+    + para saber valor único que aparece **más** veces en la columna 8
+    ```bash
+     grep -i Nissan Electric_Vehicle_Population_Data.csv | cut -d';' -f8 | sort | uniq -c | sort -t' ' -k1 -r | head -1
+    ```   
+
+     + para saber valor único que aparece **menos** veces en la columna 8
+    ```bash
+     grep -i Nissan Electric_Vehicle_Population_Data.csv | cut -d';' -f8 | sort | uniq -c | sort -t' ' -k1  | head -1
+    ```  
+
+  + Para saber el **valor medio** de un valor en la columna 11 por las categorías que tenemos en la columna 7
 
     ```bash
-    awk -F";" '{count[$7]++;} END {for (make in count) print make, count[make]}' datos.csv
-    ```    
+    awk -F";" '{count[$7]++; suma[$7]=suma[$7] + $11;} END {for (make in count) print make, suma[make]/count[make]}' datos.csv
+    ``` 
+
+    ## no repitas consultas. Haz un script!!!!
+
+    puedes crear un sript bash para no repetir preguntas, como la de averiguar en que coluna hay una informacion.
+
+    + Averigua dónde está bash en tu máquina 
+    ```bash
+    $ which bash
+    /usr/bin/bash
+    ```
+    usa esa ruta como la  de un guion o script de bash. yo lo llamo **columnas.sh**
+    $ echo "#\!/usr/bin/bash" > columnas.sh
+    $ echo "head -1 flags.csv | sed -e 's/:/:\n/g'| grep -n ':'" >> columnas.sh
+    $ chmod +x columnas.sh
+    $ ./columnas.sh
+
+    Notad el diferente uso del primer **>** y del segundogit log --oneline **>>**.
+    chmod +x le da permisos de ejecuición al guion.
+
+    # Sin miedo a mayúsculas y minusculas en el grep: usa el flag -i

@@ -28,24 +28,67 @@ El metadata del fichero es:
 |Electric Utility| The electric utility company associated with the vehicle.|
 |2020 Census Tract| The census tract where the vehicle is registered.|
 
-## ¿Cuantos registros hay en el fichero?
+## ¿Cuántos registros hay en el fichero?
 
 ```bash
-Escribe la linea de comandos bash con la  que has optenido la respuesta
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
 ```
 
-## ¿De cuantos estados hay vehículos registrados?
+## ¿De cuántos estados hay vehículos registrados?
 
-## En que posición se encuentra la columna con el año de fabricación
+```bash
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
+```
+## ¿En que posición se encuentra la columna con el año de fabricación?
 
-## En que año se fabricó el vehículo matriculado en Texas (TX)
+```bash
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
+```
+## ¿En que año se fabricó el vehículo matriculado en Texas (TX)?
 
-## Cual es el modelo de vehículo matriculado en Californía (CA)
+```bash
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
+```
+## ¿Cuál es el modelo de vehículo matriculado en Californía (CA)?
 
-## De cuantas ciudades del estado de Washigthon hay datos en el fichero
+```bash
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
+```
+## ¿De cuántas ciudades del estado de Washigthon hay datos en el fichero?
 
-## De los vehículos registrados en la ciudad de Shelton, el que tiene el mayor rango electrico, cuantas millas puede recorrer?
+```bash
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
+```
+## De los vehículos registrados en la ciudad de Shelton, el que tiene el mayor rango electrico, ¿cuántas millas puede recorrer?
 
-## Cual es el DOL vehicle ID de ese vehículo que alcanza esa distancia máxima?
+```bash
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
+```
+## ¿Cuál es el DOL vehicle ID de ese vehículo que alcanza esa distancia máxima?
 
-## Cuales son los fabricantes que tienen más de 4000 vehiculos registrados
+```bash
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
+```
+## ¿Cuáles son los fabricantes que tienen más de 4000 vehiculos registrados?
+
+```bash
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
+```
+
+## ¿Cuáles son los fabricantes que tienen más de 4000 vehiculos registrados?
+
+```bash
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
+```
+
+## ¿Qué modelo de Nissa es lider en ventas?
+
+```bash
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
+```
+
+## Ordena de mayor a menor autonomía promedio a los fabricantes
+
+```bash
+Escribe la linea de comandos bash con la  que has obtenido la respuesta
+```
