@@ -77,23 +77,21 @@ cut -d";" -f3,11,14 Electric_Vehicle_Population_Data.csv | grep Shelton | sort -
 ## ¿Cuáles son los fabricantes que tienen más de 4000 vehiculos registrados?
 
 ```bash
-Escribe la linea de comandos bash con la  que has obtenido la respuesta
+cut -d";" -f7 Electric_Vehicle_Population_Data.csv | sort | uniq -c | sort | awk '$1 > 4000'
 ```
 
-## ¿Cuáles son los fabricantes que tienen más de 4000 vehiculos registrados?
+## ¿Qué modelo de Nissan es lider en ventas?
 
 ```bash
-Escribe la linea de comandos bash con la  que has obtenido la respuesta
-```
-
-## ¿Qué modelo de Nissa es lider en ventas?
-
-```bash
-Escribe la linea de comandos bash con la  que has obtenido la respuesta
+head -1 Electric_Vehicle_Population_Data.csv | sed -e "s/;/\n/g" | grep -n State
+head -1 Electric_Vehicle_Population_Data.csv | sed -e "s/;/\n/g" | grep -n Model
+cut -d';' -f4,7,8 Electric_Vehicle_Population_Data.csv | sort | uniq -c | sort | grep NISSAN
 ```
 
 ## Ordena de mayor a menor autonomía promedio a los fabricantes
 
 ```bash
-Escribe la linea de comandos bash con la  que has obtenido la respuesta
+head -1 Electric_Vehicle_Population_Data.csv | sed -e "s/;/\n/g" | grep -n Make
+head -1 Electric_Vehicle_Population_Data.csv | sed -e "s/;/\n/g" | grep -n "Electric Range"
+cut -d';' -f7,11 Electric_Vehicle_Population_Data.csv | sort | uniq -c | sort | awk -F";" '{sum += $2; count++} END { print sum / count}'
 ```
